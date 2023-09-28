@@ -64,9 +64,9 @@ def new_win():
 
 
 def send_location():
-    account_sid = "AC25b930c7e6437c710c203704b73456c1"
-    auth_token = "c2f4b394109bf710737ec47c047b1a53"
-    api_key = "AIzaSyB578H3i9Rzhw5JzxbIfRH6zc9OF_s7lbE"
+    account_sid = "Your Twilio Account SID"
+    auth_token = "Your Twilio Authorization Token"
+    api_key = "Your Google Maps API Key"
 
     gmaps = googlemaps.Client(key=api_key)
     client = Client(account_sid, auth_token)
@@ -83,7 +83,7 @@ def send_location():
 
 
 def start_journey():
-    api_key = "AIzaSyB578H3i9Rzhw5JzxbIfRH6zc9OF_s7lbE"
+    api_key = "Your Google Maps API KEY"
     gmaps = googlemaps.Client(key=api_key)
     src = s.get()
     des = d.get()
